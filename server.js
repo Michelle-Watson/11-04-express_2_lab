@@ -8,6 +8,16 @@ import router from "./routes/foodRoutes.js"; //Did you mean to import "./routes/
 
 // Create an instance of Express
 const app = express();
+app.use(express.static("public"));
+
+// SLIDE 9: Middleware in Express
+// Create a middleware function in your server.js file that...
+app.use((req, res, next) => {
+  // logs the path that the request is targeting & time req. was received
+  console.log(req.path, new Date());
+  // CONSOLE: /foods/soups 2024-11-04T17:31:13.972Z
+  next();
+});
 
 // Enable CORS
 app.use(cors());
