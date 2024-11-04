@@ -65,3 +65,8 @@ app.use(express.static('public'))
 To confirm that your static files are being served correctly, start your server in the terminal with the `node` command, and visit `localhost:8080`. You should be able to see your HTML page displayed in the browser!  
 
 As a bonus, try adding some more files to your `public` folder. How do you access these files in your web browser? Note that you could serve an entire website this way!
+
+## Testing This lab
+[Postman Collection Testing This Express Lab](https://www.postman.com/aerospace-architect-73612045/workspace/api-practice/collection/37613824-1b6d6221-bc34-43a5-a29c-ae96391d2966?action=share&creator=37613824).
+
+
